@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/styles.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brandname">
+                ML App
+            </div>
+            <h2>Spam Detector for SMS Message</h2>
+        </div>
+
+    </header>
+    <p style="color:blue; font-size:20;text-align: center;"><b>Result for Comment</b></p>
+    <div class="results">
+        {% if prediction_text == 1%}
+        <h2 style="color:red;">This is Spam message.</h2>
+        {% elif prediction_text == 0%}
+        <h2 style="color:blue;">This is not a Spam message.</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
