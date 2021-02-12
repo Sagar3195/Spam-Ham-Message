@@ -1,3 +1,4 @@
-# Spam-Ham-Message
-
-### Heroku app url : https://spam-ham-detect.herokuapp.com/
+# Spam-Ham-Message Classification Deployment
+ - This repository consists of files required to deploy a Machine Learning Web App created with Flask on Heroku platform.
+ - If you want to view the deployed model, click on the following link :
+ - Deployed at : https://spam-ham-detect.herokuapp.com/
